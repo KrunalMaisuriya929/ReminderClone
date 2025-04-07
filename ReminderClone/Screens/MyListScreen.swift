@@ -6,31 +6,36 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct MyListScreen: View {
     
+    @Query private var myLists: [MyList]
+    
     let myList = ["Reminders", "Groceries", "Entertainment"]
+    @State private var isPresented: Bool = false
     
     var body: some View {
 
         List{
-            
             Text("My List")
                 .font(.largeTitle)
                 .bold()
             
-            ForEach(myList, id: \.self) { myList in
+            ForEach(myLists) { myList in
                 HStack{
                     Image(systemName: "line.3.horizontal.circle.fill")
                         .font(.system(size: 32))
+                        .foregroundStyle(Color(hex: myList.colorCode))
                     
-                    Text(myList)
+                    Text(myList.name)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     
                 }
             }
             
             Button(action: {
-                
+                isPresented = true
             }, label: {
                 Text("Add List")
                     .foregroundStyle(.blue)
@@ -38,6 +43,11 @@ struct MyListScreen: View {
             }).listRowSeparator(.hidden)
             
         }.listStyle(.plain)
+            .sheet(isPresented: $isPresented, content: {
+                NavigationStack{
+                    AddMyListScreen()
+                }
+            })
         
     }
 }
@@ -45,5 +55,5 @@ struct MyListScreen: View {
 #Preview {
     NavigationStack{
         MyListScreen()
-    }
+    }.modelContainer(previewContainer)
 }

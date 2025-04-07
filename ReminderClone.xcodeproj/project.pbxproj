@@ -14,6 +14,9 @@
 		E826A64C2DA431EF00D5A096 /* MyListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826A64B2DA431EF00D5A096 /* MyListScreen.swift */; };
 		E826A64E2DA4349C00D5A096 /* AddMyListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826A64D2DA4349C00D5A096 /* AddMyListScreen.swift */; };
 		E826A6512DA435B300D5A096 /* colorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826A6502DA435B300D5A096 /* colorPickerView.swift */; };
+		E826A6542DA43BCB00D5A096 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826A6532DA43BCB00D5A096 /* MyList.swift */; };
+		E826A6562DA43DB000D5A096 /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826A6552DA43DB000D5A096 /* PreviewContainer.swift */; };
+		E826A6592DA4441C00D5A096 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826A6582DA4441C00D5A096 /* Color+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		E826A64B2DA431EF00D5A096 /* MyListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListScreen.swift; sourceTree = "<group>"; };
 		E826A64D2DA4349C00D5A096 /* AddMyListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMyListScreen.swift; sourceTree = "<group>"; };
 		E826A6502DA435B300D5A096 /* colorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorPickerView.swift; sourceTree = "<group>"; };
+		E826A6532DA43BCB00D5A096 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
+		E826A6552DA43DB000D5A096 /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
+		E826A6582DA4441C00D5A096 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,8 @@
 		E826A63B2DA41E3800D5A096 /* ReminderClone */ = {
 			isa = PBXGroup;
 			children = (
+				E826A6572DA443F200D5A096 /* Extension */,
+				E826A6522DA43BA700D5A096 /* Models */,
 				E826A64F2DA4357800D5A096 /* Views */,
 				E826A64A2DA422F400D5A096 /* Screens */,
 				E826A63C2DA41E3800D5A096 /* ReminderCloneApp.swift */,
@@ -71,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				E826A6432DA41E3A00D5A096 /* Preview Assets.xcassets */,
+				E826A6552DA43DB000D5A096 /* PreviewContainer.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -90,6 +99,22 @@
 				E826A6502DA435B300D5A096 /* colorPickerView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E826A6522DA43BA700D5A096 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E826A6532DA43BCB00D5A096 /* MyList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E826A6572DA443F200D5A096 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E826A6582DA4441C00D5A096 /* Color+Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +190,11 @@
 				E826A63F2DA41E3800D5A096 /* ContentView.swift in Sources */,
 				E826A64C2DA431EF00D5A096 /* MyListScreen.swift in Sources */,
 				E826A6512DA435B300D5A096 /* colorPickerView.swift in Sources */,
+				E826A6592DA4441C00D5A096 /* Color+Extensions.swift in Sources */,
 				E826A63D2DA41E3800D5A096 /* ReminderCloneApp.swift in Sources */,
 				E826A64E2DA4349C00D5A096 /* AddMyListScreen.swift in Sources */,
+				E826A6562DA43DB000D5A096 /* PreviewContainer.swift in Sources */,
+				E826A6542DA43BCB00D5A096 /* MyList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
