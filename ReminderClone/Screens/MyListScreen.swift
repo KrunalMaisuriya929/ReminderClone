@@ -23,15 +23,18 @@ struct MyListScreen: View {
                 .bold()
             
             ForEach(myLists) { myList in
-                HStack{
-                    Image(systemName: "line.3.horizontal.circle.fill")
-                        .font(.system(size: 32))
-                        .foregroundStyle(Color(hex: myList.colorCode))
-                    
-                    Text(myList.name)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    
-                }
+                NavigationLink(destination: MyListDetailScreen(myList: myList), label: {
+                    HStack{
+                        Image(systemName: "line.3.horizontal.circle.fill")
+                            .font(.system(size: 32))
+                            .foregroundStyle(Color(hex: myList.colorCode))
+                        
+                        Text(myList.name)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                    }
+
+                })
             }
             
             Button(action: {
