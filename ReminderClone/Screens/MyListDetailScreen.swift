@@ -13,7 +13,21 @@ struct MyListDetailScreen: View {
     let myList: MyList
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            List(myList.reminders) { reminder in
+                Text(reminder.title)
+                
+            }
+            
+            Spacer()
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                HStack {
+                    Image(systemName: "plus.circle.fill")
+                    Text("New Reminder")
+                }
+            })
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
             .navigationTitle(myList.name)
     }
 }
