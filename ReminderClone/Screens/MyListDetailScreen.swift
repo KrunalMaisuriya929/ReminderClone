@@ -11,6 +11,17 @@ import SwiftData
 struct MyListDetailScreen: View {
     
     let myList: MyList
+    @State private var title: String = ""
+    @State private var isNewReminderPresented : Bool = false
+    
+    private var isFormValid : Bool {
+        !title.isEmptyPrWhitespace
+    }
+    
+    private func saveReminder() {
+        let reminder = Reminder(title: title)
+        myList.reminders.append(reminder)
+    }
     
     var body: some View {
         VStack{
@@ -20,15 +31,26 @@ struct MyListDetailScreen: View {
             }
             
             Spacer()
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {
+                isNewReminderPresented = true
+            }, label: {
                 HStack {
                     Image(systemName: "plus.circle.fill")
                     Text("New Reminder")
                 }
             })
             .frame(maxWidth: .infinity, alignment: .leading)
-        }
-            .navigationTitle(myList.name)
+            .padding()
+        }.navigationTitle(myList.name)
+            .alert("New Reminder", isPresented: $isNewReminderPresented) {
+                TextField("", text: $title)
+                Button("Cancel", role: .cancel){ }
+                Button("Done"){
+                    if isFormValid{
+                        saveReminder()
+                    }
+                }//.disabled(!isFormValid)
+            }
     }
 }
 
