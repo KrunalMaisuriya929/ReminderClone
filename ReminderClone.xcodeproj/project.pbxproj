@@ -16,6 +16,7 @@
 		E826A6542DA43BCB00D5A096 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826A6532DA43BCB00D5A096 /* MyList.swift */; };
 		E826A6562DA43DB000D5A096 /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826A6552DA43DB000D5A096 /* PreviewContainer.swift */; };
 		E826A6592DA4441C00D5A096 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826A6582DA4441C00D5A096 /* Color+Extensions.swift */; };
+		E83EED222DAD7B6600B7E1C8 /* ReminderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83EED212DAD7B6600B7E1C8 /* ReminderCellView.swift */; };
 		E89C2C242DAAD47D00BABDC4 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89C2C232DAAD47D00BABDC4 /* String+Extension.swift */; };
 		E8CAF89C2DA53D9D00322834 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF89B2DA53D9D00322834 /* Reminder.swift */; };
 		E8CAF89E2DA5404B00322834 /* MyListDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF89D2DA5404B00322834 /* MyListDetailScreen.swift */; };
@@ -32,6 +33,7 @@
 		E826A6532DA43BCB00D5A096 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
 		E826A6552DA43DB000D5A096 /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		E826A6582DA4441C00D5A096 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		E83EED212DAD7B6600B7E1C8 /* ReminderCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCellView.swift; sourceTree = "<group>"; };
 		E89C2C232DAAD47D00BABDC4 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		E8CAF89B2DA53D9D00322834 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		E8CAF89D2DA5404B00322834 /* MyListDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListDetailScreen.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				E826A6502DA435B300D5A096 /* colorPickerView.swift */,
+				E83EED212DAD7B6600B7E1C8 /* ReminderCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				E826A6592DA4441C00D5A096 /* Color+Extensions.swift in Sources */,
 				E826A63D2DA41E3800D5A096 /* ReminderCloneApp.swift in Sources */,
 				E826A64E2DA4349C00D5A096 /* AddMyListScreen.swift in Sources */,
+				E83EED222DAD7B6600B7E1C8 /* ReminderCellView.swift in Sources */,
 				E826A6562DA43DB000D5A096 /* PreviewContainer.swift in Sources */,
 				E8CAF89E2DA5404B00322834 /* MyListDetailScreen.swift in Sources */,
 				E826A6542DA43BCB00D5A096 /* MyList.swift in Sources */,

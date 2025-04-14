@@ -29,8 +29,6 @@ struct SampleData {
     }
 
     static var reminder: [Reminder] {
-//        return [Reminder(name: "Reminder", colorCode: "#2ec71"), Reminder(backingData: BackingData<Reminder>, name: "Backlog", colorCode: "#965966")]
-//        
-        return [Reminder(title: "Reminder 1"), Reminder(title: "Reminder 2", notes: "This is a reminder 2 notes")]
+        return [Reminder(title: "Reminder 1", notes: "This is reminder 1 notes!", reminderDate: Date(), reminderTime: Date()), Reminder(title: "Reminder 2", notes: "This is a reminder 2 notes")]
     }
 }
